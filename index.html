@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuyển Dụng - Hatuba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .header {
+      background-color: #0c9b4b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    .header p {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+
+    .recruitment {
+      background-color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .recruitment h2 {
+      color: #d62828;
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .job-list {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .job-item {
+      border: 2px solid #0c9b4b;
+      padding: 12px 20px;
+      font-weight: bold;
+      color: #0c9b4b;
+      border-radius: 25px;
+      position: relative;
+      text-align: left;
+    }
+    .job-item a {
+      
+      color: #0c9b4b;
+     
+    }
+
+    /* .job-item::before {
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 20px solid #0c9b4b;
+    } */
+
+    .contact {
+      background-color: #0c9b4b;
+      color: white;
+      padding: 30px 15px;
+    }
+
+    .contact-title {
+      background-color: #d62828;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    .contact-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 900px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .qr-code {
+      max-width: 150px;
+      flex-shrink: 0;
+    }
+
+    .qr-code img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 36px;
+      }
+
+      .recruitment h2 {
+        font-size: 22px;
+      }
+
+      .job-item {
+        font-size: 15px;
+        padding: 10px 16px;
+      }
+
+      .job-item::before {
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 18px solid #0c9b4b;
+      }
+
+      .contact-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-info {
+        text-align: center;
+      }
+
+      .qr-code {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Hatuba</h1>
+    <p>Advertising - Media - Event</p>
+  </div>
+
+  <div class="recruitment">
+    <h2>TUYỂN DỤNG NHÂN SỰ</h2>
+    <div class="job-list">
+      <div class="job-item"><a href="">TRƯỞNG PHÒNG KINH DOANH (01 NGƯỜI)</a></div>
+      <div class="job-item">TRƯỞNG PHÒNG NHÂN SỰ - HC (01 NGƯỜI)</div>
+      <div class="job-item">THỢ QUẢNG CÁO - NỘI THẤT (10 NGƯỜI)</div>
+      <div class="job-item">THIẾT KẾ NỘI THẤT (01 NGƯỜI)</div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact-box">
+      <div class="contact-info">
+        <div class="contact-title">THÔNG TIN LIÊN HỆ</div>
+        <p>📧 tuyendung@hatuba.com.vn</p>
+        <p>🌐 <a href="https://www.hatuba.com.vn" target="_blank">www.hatuba.com.vn</a></p>
+        <p>📞 091.780.9986 - 098.821.1579</p>
+        <p>📍 Lô CC3-5 KCN Tây Bắc Ga, phường Đông Thọ, TP. Thanh Hoá</p>
+      </div>
+      <div class="qr-code">
+        <img src="tuyendung.jpg" alt="QR Code" />
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
