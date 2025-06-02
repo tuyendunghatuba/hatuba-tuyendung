@@ -26,8 +26,8 @@
       padding: 30px 20px;
     }
 
-    .header h1 {
-      font-size: 42px;
+    .header img {
+      width: 10%;
       font-weight: bold;
     }
 
@@ -68,8 +68,21 @@
     .job-item a {
       
       color: #0c9b4b;
+      text-decoration: none
      
     }
+    .job-item:hover {
+  background-color: #0c9b4b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+  .job-item:hover a {
+  
+  color: white;
+  
+  transition: 0.3s ease;
+}
 
     /* .job-item::before {
       content: "";
@@ -175,17 +188,16 @@
 <body>
 
   <div class="header">
-    <h1>Hatuba</h1>
-    <p>Advertising - Media - Event</p>
+    <a href="https://hatuba.com.vn/mktuyendungtype/"><img src="./IMAGE/logo.png" alt=""></a>
   </div>
 
   <div class="recruitment">
     <h2>TUYỂN DỤNG NHÂN SỰ</h2>
     <div class="job-list">
       <div class="job-item"><a href="">TRƯỞNG PHÒNG KINH DOANH (01 NGƯỜI)</a></div>
-      <div class="job-item">TRƯỞNG PHÒNG NHÂN SỰ - HC (01 NGƯỜI)</div>
-      <div class="job-item">THỢ QUẢNG CÁO - NỘI THẤT (10 NGƯỜI)</div>
-      <div class="job-item">THIẾT KẾ NỘI THẤT (01 NGƯỜI)</div>
+      <div class="job-item"><a href="">TRƯỞNG PHÒNG NHÂN SỰ - HC (01 NGƯỜI)</a></div>
+      <div class="job-item"><a href="">THỢ QUẢNG CÁO - NỘI THẤT (10 NGƯỜI)</a></div>
+      <div class="job-item"><a href="">THIẾT KẾ NỘI THẤT (01 NGƯỜI)</a></div>
     </div>
   </div>
 
@@ -199,7 +211,7 @@
         <p>📍 Lô CC3-5 KCN Tây Bắc Ga, phường Đông Thọ, TP. Thanh Hoá</p>
       </div>
       <div class="qr-code">
-        <img src="tuyendung.jpg" alt="QR Code" />
+        <img src="./IMAGE/QR.jpg" alt="QR Code" />
       </div>
     </div>
   </div>
